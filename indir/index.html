@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İndir — PandaDersDağıtım</title>
+<meta name="description" content="PandaDersDağıtım'ı Linux (AppImage) ve Windows (taşınabilir .exe) için indirin veya kaynak koddan derleyin.">
+<meta name="darkreader-lock" content="no-darkreader">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../style.css">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("pdd-theme"); } catch (e) {}
+    if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../">PandaDersDağıtım</a>
+    <nav class="nav-links" id="menu" aria-label="Ana menü">
+      <a href="../">Ana Sayfa</a>
+      <a href="../neden/">Neden PDD?</a>
+      <a href="../hakkinda/">Hakkında</a>
+      <a href="../indir/" aria-current="page">İndir</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-sm" href="https://github.com/kinderlinux/PDD">GitHub</a>
+      <button class="btn-icon" id="theme-toggle" aria-label="Açık / karanlık tema değiştir">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <button class="btn-icon nav-toggle" id="menu-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">İndir</span>
+      <h1>İşletim sisteminize uygun paketi seçin.</h1>
+      <p class="lead">
+        Linux için tek dosyalık <code>.AppImage</code>, Windows için taşınabilir <code>.exe</code>.
+        Kurulum gerektirmez, lisans ücreti yoktur; tüm paketler GitHub Releases sayfasından açık ve
+        doğrulanabilir biçimde sunulur.
+      </p>
+      <p style="margin-top:24px">
+        <span class="badge">Güncel sürüm: GitHub Releases</span>
+        <span class="badge">AGPL-3.0</span>
+        <span class="badge">Ücretsiz</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="https://github.com/kinderlinux/PDD/releases">GitHub Releases</a>
+        <a class="btn btn-secondary" href="https://github.com/kinderlinux/PDD/archive/refs/heads/main.zip">Kaynak kodu indir (.zip)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="card" style="padding:32px">
+        <span class="eyebrow">Bütçe notu</span>
+        <h2 style="margin-top:12px">Lisans ödemesi yok; o tutar eğitime kalır.</h2>
+        <p style="margin-top:12px; font-size:16px; line-height:24px; max-width:70ch">
+          Her okul için yıllık bir lisans faturası, kitap ve laboratuvar alımı için ayrılan
+          paranın bir kısmıdır. PandaDersDağıtım ücretsiz olduğundan bu kalem bütçeden hiç
+          çıkmaz; program okulunuzun malzemelerine, atölyelerine ve öğrenci desteğine
+          ayrılan bütçeye geri gider.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="grid grid-2">
+        <article class="card">
+          <span class="mono-label">LINUX — ÖNERİLEN</span>
+          <h3>AppImage (.AppImage)</h3>
+          <p>
+            Dağıtım için en pratik yöntem: tek dosya, kurulum yok, sistemde iz bırakmaz.
+            Dosyayı çalıştırma iznini verip açmanız yeterlidir; kurulum adımı yoktur.
+          </p>
+          <p style="margin-top:16px">
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD/releases">İndir</a>
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD/releases" style="margin-left:8px">Sürüm notları</a>
+          </p>
+        </article>
+        <article class="card">
+          <span class="mono-label">WINDOWS</span>
+          <h3>Taşınabilir .exe</h3>
+          <p>
+            Windows 10 ve üzeri için taşınabilir <code>.exe</code> dosyası: kurulum sihirbazı yok,
+            sistemde kalıcı iz yok. Dosyayı çift tıklamanız programı başlatır; USB belleğe
+            kopyalayıp başka bir bilgisayarda da kullanabilirsiniz.
+          </p>
+          <p style="margin-top:16px">
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD/releases">İndir</a>
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD/releases" style="margin-left:8px">Sürüm notları</a>
+          </p>
+        </article>
+        <article class="card">
+          <span class="mono-label">macOS — HENÜZ YOK</span>
+          <h3>macOS paketi neden yok?</h3>
+          <p>
+            macOS için <code>.dmg</code> paketi hazırlayıp <em>test edebileceğimiz bir Mac cihazımız
+            bulunmuyor</em>. Yine de macOS kullanıcıları, depodaki yönergeleri izleyerek kaynak
+            koddan derleyebilir. Doğrulanmış bir macOS paketi hazır olduğunda bu bölüm güncellenecektir.
+          </p>
+          <p style="margin-top:16px">
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD">Depoyu aç</a>
+          </p>
+        </article>
+        <article class="card">
+          <span class="mono-label">KAYNAK KOD</span>
+          <h3>Kaynaktan derleme</h3>
+          <p>
+            Depoyu çatallayın, proje dosyalarındaki derleme yönergelerini izleyin. Dağıtım
+            kurallarını kendi okulunuz için değiştirmek isterseniz en esnek yöntem budur.
+          </p>
+          <p style="margin-top:16px">
+            <a class="btn btn-sm" href="https://github.com/kinderlinux/PDD">Depoyu aç</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Kurulum</span>
+        <h2>Üç adımda hazır</h2>
+        <p>İndirmeden sonra yalnızca bu üç adım yeterlidir.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <div>
+            <h3>İndirin</h3>
+            <p>
+              İşletim sisteminize uygun paketi <a href="https://github.com/kinderlinux/PDD/releases">GitHub Releases</a>
+              sayfasından indirin. Hangi dosyayı seçeceğiniz yukarıdaki kartlarda belirtilmiştir.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Çalıştırın</h3>
+            <p>
+              <strong>Linux:</strong> <code>chmod +x PandaDersDagitim.AppImage</code> komutunu
+              çalıştırıp dosyaya çift tıklayın ya da <code>./PandaDersDagitim.AppImage</code> ile başlatın.
+              <strong>Windows:</strong> indirdiğiniz <code>.exe</code> dosyasına çift tıklayın;
+              kurulum adımı yoktur.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Programınızı oluşturun</h3>
+            <p>
+              Öğretmen, sınıf ve ders bilgilerini girin, kısıtlamaları tanımlayın ve dağıtımı
+              başlatın. Sonucu yazdırın veya dışa aktarın.
+            </p>
+          </div>
+        </li>
+      </ol>
+      <p style="margin-top:32px">
+        <a href="https://github.com/kinderlinux/PDD/releases">Tüm sürümleri ve paketleri görün →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Sorun mu yaşıyorsunuz?</h2>
+      <p>Hata bildirimi ve özellik istekleri açık depoda; katkılar doğrudan projeye işlenir.</p>
+      <a class="btn" href="https://github.com/kinderlinux/PDD/issues">Sorun bildir</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../">PandaDersDağıtım</a>
+        <p style="margin-top:8px; max-width:32ch">Okullar için ücretsiz, açık kaynak ders dağıtım yazılımı.</p>
+      </div>
+      <div>
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="../">Ana Sayfa</a></li>
+          <li><a href="../neden/">Neden PDD?</a></li>
+          <li><a href="../hakkinda/">Hakkında</a></li>
+          <li><a href="../indir/">İndir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Proje</h4>
+        <ul>
+          <li><a href="https://github.com/kinderlinux/PDD">GitHub Deposu</a></li>
+          <li><a href="https://github.com/kinderlinux/PDD/releases">Sürümler (Releases)</a></li>
+          <li><a href="https://github.com/kinderlinux/PDD/blob/main/LICENSE">Lisans (AGPL-3.0)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PandaDersDağıtım · AGPL-3.0 ile lisanslanmıştır.</span>
+      <span>Özgür yazılım, eğitimin kalemi.</span>
+    </div>
+  </div>
+</footer>
+<script src="../theme.js"></script>
+</body>
+</html>

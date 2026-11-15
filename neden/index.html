@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neden PandaDersDağıtım? — Ücretli ders dağıtım yazılımlarına açık kaynak alternatif</title>
+<meta name="description" content="PandaDersDağıtım, ücretli ve kapalı kaynak ders dağıtım yazılımlarına karşı ücretsiz, şeffaf ve özgür bir alternatiftir. Karşılaştırma tablosu.">
+<meta name="darkreader-lock" content="no-darkreader">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../style.css">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("pdd-theme"); } catch (e) {}
+    if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../">PandaDersDağıtım</a>
+    <nav class="nav-links" id="menu" aria-label="Ana menü">
+      <a href="../">Ana Sayfa</a>
+      <a href="../neden/" aria-current="page">Neden PDD?</a>
+      <a href="../hakkinda/">Hakkında</a>
+      <a href="../indir/">İndir</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-sm" href="https://github.com/kinderlinux/PDD">GitHub</a>
+      <button class="btn-icon" id="theme-toggle" aria-label="Açık / karanlık tema değiştir">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <button class="btn-icon nav-toggle" id="menu-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Karşılaştırma</span>
+      <h1>Ücretli dağıtım yazılımı şart değil.</h1>
+      <p class="lead">
+        Kapalı kaynaklı okul yazılımları yıllık lisans ücreti ister ve dağıtım kararlarını
+        kullanıcıya göstermez. PandaDersDağıtım aynı işi ücretsiz, şeffaf ve özgür yazılım
+        felsefesiyle yapar — okulun bütçesinden lisans kalemi çıkar, para eğitime kalır.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Lisans ücreti yok</h3>
+          <p>
+            Okul bütçesinden yıllık bir kalem çıkması gerekmez. Program ücretsizdir ve
+            AGPL-3.0 ile dağıtılır; o parayı kitap, laboratuvar malzemesi ve öğrenci
+            desteğine yönlendirebilirsiniz.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Şeffaf ve denetlenebilir</h3>
+          <p>
+            Dağıtım algoritmasının tamamı açık kaynak kodda yer alır. Kararın neden böyle
+            verildiğini okuyabilir, kendi kuralınızı ekleyebilirsiniz.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Veri kontrolü sizin elinizde</h3>
+          <p>
+            Öğrenci, öğretmen ve sınıf verileri yalnızca okulun bilgisayarında saklanır.
+            Verileri hiçbir bulut servisine gönderilmez.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Özgür ve sürdürülebilir</h3>
+          <p>
+            Topluluk katkısıyla gelişen bir proje. Kullanıcı sayısı artsa bile lisans yenileme
+            zorunluluğu doğmaz.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Karşılaştırma tablosu</span>
+        <h2>PandaDersDağıtım ve kapalı kaynak alternatifler</h2>
+        <p>Genel özellik karşılaştırması; satıcıya özel fiyat ve modül detayları değişebilir.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col">Özellik</th>
+              <th scope="col">PandaDersDağıtım</th>
+              <th scope="col">Ücretli kapalı kaynak yazılımlar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Maliyet</th>
+              <td class="us">Ücretsiz; lisans ücreti bütçeden çıkar, o tutar eğitime kalır</td>
+              <td>Yıllık abonelik / okul lisansı — her yıl bütçeden kalem</td>
+            </tr>
+            <tr>
+              <th scope="row">Açık kaynak / şeffaflık</th>
+              <td class="us"><span class="yes">Açık kaynak (AGPL-3.0)</span> — kod okunabilir, değiştirilebilir</td>
+              <td>Kapalı kaynak, algoritma görünmez</td>
+            </tr>
+            <tr>
+              <th scope="row">Arayüz</th>
+              <td class="us">Sade ve odaklı; hızlı, tek pencere</td>
+              <td>Fazla modül, geniş ayar yüzeyi, öğrenme yükü</td>
+            </tr>
+            <tr>
+              <th scope="row">Platform desteği</th>
+              <td class="us">Linux ve Windows — aynı sürüm, aynı özellikler</td>
+              <td>Genelde tek işletim sistemine odaklı, sürüm farkları olabilir</td>
+            </tr>
+            <tr>
+              <th scope="row">Veri konumu</th>
+              <td class="us">Yerel; çevrimdışı çalışır</td>
+              <td>Çoğunlukla bulut hesabı ve sunucu bağımlılığı</td>
+            </tr>
+            <tr>
+              <th scope="row">Topluluk</th>
+              <td class="us">Açık depo, herkes katkı yapabilir</td>
+              <td>Yol haritası kapalı, geri bildirim kanalı sınırlı</td>
+            </tr>
+            <tr>
+              <th scope="row">Kısıtlama / çakışma yönetimi</th>
+              <td class="us">Var — kurallar tanımlanabilir ve denetlenebilir</td>
+              <td>Var — ancak kuralların davranışı belgelenmez</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ücretsiz alternatifi deneyin</h2>
+      <p>Kurulum gerektirmez, lisans anahtarı istemez. Hemen indirin ve okulunuzun programını oluşturun.</p>
+      <a class="btn" href="../indir/">Hemen İndir</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../">PandaDersDağıtım</a>
+        <p style="margin-top:8px; max-width:32ch">Okullar için ücretsiz, açık kaynak ders dağıtım yazılımı.</p>
+      </div>
+      <div>
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="../">Ana Sayfa</a></li>
+          <li><a href="../neden/">Neden PDD?</a></li>
+          <li><a href="../hakkinda/">Hakkında</a></li>
+          <li><a href="../indir/">İndir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Proje</h4>
+        <ul>
+          <li><a href="https://github.com/kinderlinux/PDD">GitHub Deposu</a></li>
+          <li><a href="https://github.com/kinderlinux/PDD/releases">Sürümler (Releases)</a></li>
+          <li><a href="https://github.com/kinderlinux/PDD/blob/main/LICENSE">Lisans (AGPL-3.0)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PandaDersDağıtım · AGPL-3.0 ile lisanslanmıştır.</span>
+      <span>Özgür yazılım, eğitimin kalemi.</span>
+    </div>
+  </div>
+</footer>
+<script src="../theme.js"></script>
+</body>
+</html>
